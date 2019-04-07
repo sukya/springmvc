@@ -1,1 +1,0 @@
-1、项目是基于restful风格的springmvc框架，
