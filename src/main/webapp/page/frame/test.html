@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>简单restful风格的前后端分离</title>
+</head>
+<body>
+	<a id="name" > 点击事件 </a>
+	<div id="value"></div>
+</body>
+<script type="text/javascript" src="../js/util/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/util/frameutil.js"></script>
+<script type="text/javascript">
+	var prefixPath = getRootPath();
+	$.ajax({
+		url : prefixPath+"/test/page",//http://localhost:8080/springmvn/test/page
+		type : "GET",
+		dataType : "json",
+		success : function(data) {
+			console.log(data);
+			$("#value").text(data.name);
+		},
+		error : function(data) {
+			console.log("error");
+		}
+	});
+</script>
+</html>
