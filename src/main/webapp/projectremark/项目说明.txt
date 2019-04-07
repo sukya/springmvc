@@ -1,1 +1,8 @@
-文档问
+本项目使模拟仿真实环境下，一个restful风格的springmvc的搭建过程。
+其中:springmvc.sml和projectremark文件都是非必须的。
+
+其实一个restful风格的springmvc项目骨架只需要以下几个步骤即可:
+1、导入springmvc相应的jar包
+2、配置web.xml(用于配置Dispatcherservlet)
+       springMvc-servlet.xml(用于扫描静态文件和class类)
+3、静态页面用ajax进行前后端交互
